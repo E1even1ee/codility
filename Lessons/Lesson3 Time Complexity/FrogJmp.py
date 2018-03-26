@@ -29,3 +29,10 @@
 #         expected worst-case time complexity is O(1);
 #         expected worst-case space complexity is O(1).
 
+def solution(X, Y, D):
+    # write your code in Python 3.6
+    # 注意可以整除那里
+    if (Y-X)%D == 0:
+        return (Y-X)//D
+    else:
+        return (Y-X)//D + 1
